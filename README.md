@@ -1,4 +1,4 @@
-# Amir Sembi DevOps laboratory
+# DevOps Project — Amir Sembi
 
 A personal Linux, Git, Docker and Jenkins project for Laboratory Work 1.
 The Python application serves a student information page, JSON data and a health endpoint.
@@ -13,7 +13,7 @@ The archive includes a local `.env` with these ordinary application settings.
 After a Git clone, regenerate the ignored `.env` with:
 `python3 scripts/personalize.py --group IT2-2307 --student-id 37693`.
 
-## Required project names
+## Project Structure and Naming
 
 | Element | Name |
 | --- | --- |
@@ -86,5 +86,4 @@ Run `scripts/prepare_linux.sh` after cloning: Git does not preserve empty
 directories, log files or all Unix permission bits. The script recreates
 runtime folders and the sample log, and sets the demonstration permissions.
 
-The report must be completed with the verified repository URL,
-screenshots and a successful Jenkins run. Record the video with your own voice.
+This project was developed as part of my DevOps coursework. It demonstrates Linux administration, Git version control, Docker containerization, and CI/CD automation using Jenkins. The repository also includes technical documentation, verification results, and supporting materials for the project demonstration.
