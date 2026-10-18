@@ -1,0 +1,13 @@
+name: sembi-amir-linux-env
+services:
+  linux:
+    build:
+      context: .
+      dockerfile: Linux.Dockerfile
+    hostname: sembi-amir-linux
+    working_dir: /home/student/devops/sembi_amir
+    volumes:
+      - ../:/home/student/devops/sembi_amir
+    stdin_open: true
+    tty: true
+    init: true

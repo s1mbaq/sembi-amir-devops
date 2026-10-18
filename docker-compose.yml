@@ -1,0 +1,14 @@
+name: sembi-amir-devops
+services:
+  app:
+    build: .
+    image: sembi-amir-devops:latest
+    container_name: sembi-amir-container
+    ports:
+      - "127.0.0.1:8080:8080"
+    environment:
+      STUDENT_NAME: ${STUDENT_NAME:-Amir}
+      STUDENT_SURNAME: ${STUDENT_SURNAME:-Sembi}
+      STUDENT_GROUP: ${STUDENT_GROUP:-IT2-2307}
+      STUDENT_ID: ${STUDENT_ID:?Run scripts/personalize.py first}
+    restart: unless-stopped
